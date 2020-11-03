@@ -1,12 +1,13 @@
 {
   "expo": {
-    "name": "weatherman",
-    "slug": "weatherman",
+    "name": "Weatherman",
+    "slug": "Weatherman",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/android-chrome-192x192-1.png",
+    "sdkVersion": "39.0.0",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/android-chrome-512x512.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,16 +18,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "host.exp.exponent"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/android-chrome-512x512.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.pulsating_photon.weatherman"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon-16x16.png"
     }
   }
 }

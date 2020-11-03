@@ -1,8 +1,9 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import tempIcon from '../../assets/thermometer.png'
 import Avatar from '../../utils/Avatar'
 
+const screenWidth=(Dimensions.get('window').width)
 const TemperatureCard = ({temp,feelsLike}) => {
     return (
         <View style={styles.tempCard}>
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         borderRadius:20,
         backgroundColor:'#E5E5E5',
-        maxWidth:580,
+        maxWidth:screenWidth,
         margin:5,
         padding: 10
     },

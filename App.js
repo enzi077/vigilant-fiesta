@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
       minHeight:'100vh',
       height:'100%',
       backgroundColor:'#333333',
-      overflowX:'hidden'
   },
   app__textInput:{
       height: 40, 

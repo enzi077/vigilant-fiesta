@@ -1,9 +1,10 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import descIcon from '../../assets/policy.png'
 import Avatar from '../../utils/Avatar'
 import capitalize from '../../utils/capitalize'
 
+const screenWidth=(Dimensions.get('window').width)
 const DescriptionCard = ({desc}) => {
     return (
         <View style={styles.descriptionCard}>
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         borderRadius:20,
         backgroundColor:'#E5E5E5',
-        maxWidth:580,
+        maxWidth:screenWidth,
         margin:5,
         padding: 10
     },

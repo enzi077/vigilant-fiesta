@@ -1,8 +1,9 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Dimensions, StyleSheet, Text, View } from 'react-native'
 import sunIcon from '../../assets/sun.png'
 import Avatar from '../../utils/Avatar'
 
+const screenWidth=(Dimensions.get('window').width)
 const UviCard = ({uvi}) => {
     return (
         <View style={styles.uviCard}>
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         borderRadius:20,
         backgroundColor:'#E5E5E5',
-        maxWidth:580,
+        maxWidth:screenWidth,
         margin:5,
         padding: 10,
     },

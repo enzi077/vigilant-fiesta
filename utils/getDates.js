@@ -1,9 +1,9 @@
 const formatDate=(date)=>{
   let dd=date.getDate()
-  let mm=date.getMonth()+1
+  //let mm=date.getMonth()+1
   //let year=date.getFullYear()
 
-  date=dd+'/'+mm
+  date=dd
   return date
 }
 

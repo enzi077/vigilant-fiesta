@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Dimensions } from 'react-native'
+import { StyleSheet, View, Dimensions, Text } from 'react-native'
 import {
   LineChart
 } from "react-native-chart-kit"
@@ -10,10 +10,12 @@ const chartConfig = {
   backgroundGradientFromOpacity: 0,
   backgroundGradientTo: "#E5E5E5",
   backgroundGradientToOpacity: 0,
-  color: (opacity = 0.6) => `rgba(33, 33, 33, ${opacity})`,
+  color: (opacity = 0.6) => `rgba(33, 33, 33,${opacity})`,
   strokeWidth: 2,
 };
+
 const screenWidth=(Dimensions.get('window').width)
+
 const TemperatureChart = ({daily}) => {
     
     const finalArray={labels:[],datasets:[],legend:['Minimum','Maximum']}
@@ -56,6 +58,7 @@ const TemperatureChart = ({daily}) => {
                         yAxisSuffix=' °C'
                         width={screenWidth-20}
                     />
+                    <Text style={styles.tempChart__xAxis}>Dates</Text>
                 </View>
             }
         </>
@@ -73,4 +76,8 @@ const styles = StyleSheet.create({
         maxWidth:screenWidth,
         margin:5
     },
+    tempChart__xAxis:{
+        color:'#333333',
+        margin:'auto'
+    }
 })

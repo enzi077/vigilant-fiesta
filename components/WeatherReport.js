@@ -1,10 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import Avatar from '../utils/Avatar'
-import humidity from '../assets/humidity.png'
-import description from '../assets/policy.png'
-import temperature from '../assets/thermometer.png'
-import sun from '../assets/sun.png'
+import {  View } from 'react-native'
 import TemperatureCard from './cards/TemperatureCard'
 import HumidityCard from './cards/HumidityCard'
 import UviCard from './cards/UviCard'
@@ -27,5 +22,3 @@ const WeatherReport = ({current}) => {
 }
 
 export default WeatherReport
-
-const styles = StyleSheet.create({})
