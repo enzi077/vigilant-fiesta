@@ -3,7 +3,7 @@ import { Button, SafeAreaView, StyleSheet, TextInput, View, Text, TouchableHighl
 import Weather from './components/Weather'
 
 export default function App() {
-    const mapAPIkey='pk.eyJ1IjoicHVsc2F0aW5nLXBob3RvbiIsImEiOiJja2d3aWd6NjAwYWtuMnNwOG0zMzY2OTM4In0.wLLD-mftFdNcC6lGdwKG6w'
+    const mapAPIkey='your_mapbox_api_key'
 
     const [searchText,setSearchText]=useState('')
     const [mapData,setMapData]=useState([])
