@@ -9,7 +9,7 @@ There are two APIs thorugh which data is being sourced:
 1. **OpenWeather (https://openweathermap.org/)**
 2. **Mapbox Geocoding API (https://docs.mapbox.com/api/search/#geocoding)**
 
-Third party libraries used:
+### Third party libraries used:
 1. **React Native Chart kit (https://www.npmjs.com/package/react-native-chart-kit)**
 
 **Please note:** This application requires contributions for optimization and clean up. Code compilation for Apple devices is yet to be achieved. Expo-cli and expo development should be avoided, if possible. Use **BEM** convention for stylesheet classnames **(http://getbem.com/)**.
