@@ -17,7 +17,7 @@ const chartConfig = {
 const screenWidth=(Dimensions.get('window').width)
 
 const TemperatureChart = ({daily}) => {
-    
+    const chartWidth=screenWidth-20
     const finalArray={labels:[],datasets:[],legend:['Minimum','Maximum']}
     
     const createNewData=()=>{
@@ -56,7 +56,7 @@ const TemperatureChart = ({daily}) => {
                         height={220}
                         chartConfig={chartConfig}
                         yAxisSuffix=' °C'
-                        width={screenWidth-20}
+                        width={chartWidth}
                     />
                     <Text style={styles.tempChart__xAxis}>Dates</Text>
                 </View>
