@@ -4,7 +4,7 @@ import TemperatureChart from './cards/TemperatureChart'
 import WeatherReport from './WeatherReport'
 
 const Weather = ({fullName,longitude,latitude}) => {
-    const weatherAPIcall=`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=metric&appid=d5d0165f95862f84d093bf5f8079811a`
+    const weatherAPIcall=`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=metric&appid={your_openweathermap_api_key}`
 
     const [data,setData]=useState([])
 
