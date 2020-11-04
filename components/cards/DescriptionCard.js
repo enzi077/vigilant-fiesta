@@ -10,7 +10,8 @@ const DescriptionCard = ({desc}) => {
         <View style={styles.descriptionCard}>
             <Avatar image={descIcon} style={styles.descriptionCard__avatar}/>
             <View style={styles.descriptionCard__view}>
-                <Text style={{color:'#333333'}}><strong>Description:</strong> {capitalize(desc)}</Text>
+                <Text style={{color:'#333333',fontWeight:'bold'}}>Description: </Text>
+                <Text>{capitalize(desc)}</Text>
             </View>
         </View>
     )
@@ -35,5 +36,7 @@ const styles = StyleSheet.create({
     descriptionCard__view:{
         position:'absolute',
         left:'50%',
+        display:'flex',
+        flexDirection:'row'
     }
 })

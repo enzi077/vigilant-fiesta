@@ -9,7 +9,8 @@ const UviCard = ({uvi}) => {
         <View style={styles.uviCard}>
             <Avatar image={sunIcon} style={styles.uviCard__avatar}/>
             <View style={styles.uviCard__view}>
-                <Text style={{color:'#333333'}}><strong>UV Index:</strong> {uvi}</Text>
+                <Text style={{color:'#333333',fontWeight:'bold'}}>UV Index: </Text>
+                <Text style={{color:'#333333'}}>{uvi}</Text>
             </View>
         </View>
     )
@@ -34,5 +35,7 @@ const styles = StyleSheet.create({
     uviCard__view:{
         position:'absolute',
         left:'50%',
+        display:'flex',
+        flexDirection:'row'
     }
 })

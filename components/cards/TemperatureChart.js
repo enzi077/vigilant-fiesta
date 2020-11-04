@@ -77,7 +77,8 @@ const styles = StyleSheet.create({
         margin:5
     },
     tempChart__xAxis:{
+        position:'relative',
         color:'#333333',
-        margin:'auto'
+        left:'50%'
     }
 })
