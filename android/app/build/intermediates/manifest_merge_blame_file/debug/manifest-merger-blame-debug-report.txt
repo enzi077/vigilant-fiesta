@@ -1,0 +1,262 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.pulsating_photon.weatherman"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="29" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:3:3-75
+11-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:3:20-73
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:2:3-64
+12-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:2:20-62
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:4:3-72
+13-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:4:20-70
+14    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+14-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:5:3-71
+14-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:5:20-69
+15    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+15-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:6:3-69
+15-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:6:20-67
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:7:3-63
+16-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:7:20-61
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:8:3-77
+17-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:8:20-75
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:9:3-78
+18-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:9:20-76
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:10:3-76
+19-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:10:20-74
+20    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+20-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:11:3-82
+20-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:11:20-80
+21    <uses-permission android:name="android.permission.CAMERA" />
+21-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:12:3-62
+21-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:12:20-60
+22    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+22-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:13:3-68
+22-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:13:20-66
+23    <uses-permission android:name="android.permission.READ_CONTACTS" />
+23-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:14:3-69
+23-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:14:20-67
+24    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+24-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:15:3-70
+24-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:15:20-68
+25    <uses-permission android:name="android.permission.READ_CALENDAR" />
+25-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:16:3-69
+25-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:16:20-67
+26    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+26-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:17:3-70
+26-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:17:20-68
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:18:3-77
+27-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:18:20-75
+28    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+28-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:19:3-78
+28-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:19:20-76
+29    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+29-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:20:3-70
+29-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:20:20-68
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:21:3-76
+30-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:21:20-74
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:22:3-65
+31-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:22:20-63
+32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+32-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:23:3-79
+32-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:23:20-77
+33    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+33-->[com.facebook.flipper:flipper:0.54.0] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:5-76
+33-->[com.facebook.flipper:flipper:0.54.0] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\1c7787ec82631e0394972c76bdabe608\flipper-0.54.0\AndroidManifest.xml:16:22-73
+34    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+34-->[:expo-location] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-77
+34-->[:expo-location] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-74
+35    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+35-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
+35-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
+36    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+36-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
+36-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
+37
+38    <application
+38-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:24:3-58:17
+39        android:name="com.pulsating_photon.weatherman.MainApplication"
+39-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:25:5-36
+40        android:allowBackup="true"
+40-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:29:5-31
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.1.0] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\639e914bfc1efa21e36199d3ff2c5eef\core-1.1.0\AndroidManifest.xml:24:18-86
+42        android:debuggable="true"
+43        android:icon="@mipmap/ic_launcher"
+43-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:27:5-39
+44        android:label="@string/app_name"
+44-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:26:5-37
+45        android:roundIcon="@mipmap/ic_launcher_round"
+45-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:28:5-50
+46        android:theme="@style/AppTheme"
+46-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:30:5-36
+47        android:usesCleartextTraffic="true" >
+47-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\debug\AndroidManifest.xml:6:18-53
+48        <meta-data
+48-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:32:5-131
+49            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+49-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:32:16-67
+50            android:value="https://exp.host/@pulsating_photon/Weatherman" />
+50-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:32:68-129
+51        <meta-data
+51-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:33:5-93
+52            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+52-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:33:16-68
+53            android:value="39.0.0" />
+53-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:33:69-91
+54        <meta-data
+54-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:34:5-82
+55            android:name="expo.modules.updates.ENABLED"
+55-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:34:16-59
+56            android:value="true" />
+56-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:34:60-80
+57        <meta-data
+57-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:35:5-105
+58            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+58-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:35:16-80
+59            android:value="ALWAYS" />
+59-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:35:81-103
+60        <meta-data
+60-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:36:5-99
+61            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+61-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:36:16-79
+62            android:value="0" />
+62-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:36:80-97
+63
+64        <activity
+64-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:37:5-56:16
+65            android:name="com.pulsating_photon.weatherman.MainActivity"
+65-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:38:7-35
+66            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+66-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:40:7-84
+67            android:label="@string/app_name"
+67-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:39:7-39
+68            android:launchMode="singleTask"
+68-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:41:7-38
+69            android:screenOrientation="portrait"
+69-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:44:7-43
+70            android:theme="@style/Theme.App.SplashScreen"
+70-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:43:7-52
+71            android:windowSoftInputMode="adjustResize" >
+71-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:42:7-49
+72            <intent-filter>
+72-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:46:7-49:23
+73                <action android:name="android.intent.action.MAIN" />
+73-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:47:9-60
+73-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:47:17-58
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:48:9-68
+75-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:48:19-66
+76            </intent-filter>
+77            <intent-filter>
+77-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:50:7-55:23
+78                <action android:name="android.intent.action.VIEW" />
+78-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:51:9-60
+78-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:51:17-58
+79
+80                <category android:name="android.intent.category.DEFAULT" />
+80-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:52:9-67
+80-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:52:19-65
+81                <category android:name="android.intent.category.BROWSABLE" />
+81-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:53:9-69
+81-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:53:19-67
+82
+83                <data android:scheme="com.pulsating_photon.weatherman" />
+83-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:54:9-65
+83-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:54:15-63
+84            </intent-filter>
+85        </activity>
+86        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+86-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:57:5-81
+86-->G:\prateek projects codingweb\react projects\react-native\weatherman\android\app\src\main\AndroidManifest.xml:57:15-79
+87
+88        <meta-data
+88-->[:unimodules-react-native-adapter] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:91
+89            android:name="org.unimodules.core.AppLoader#react-native-headless"
+89-->[:unimodules-react-native-adapter] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-79
+90            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+90-->[:unimodules-react-native-adapter] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\@unimodules\react-native-adapter\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-88
+91
+92        <provider
+92-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-26:20
+93            android:name="expo.modules.filesystem.FileSystemFileProvider"
+93-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-74
+94            android:authorities="com.pulsating_photon.weatherman.FileSystemFileProvider"
+94-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+95            android:exported="false"
+95-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-37
+96            android:grantUriPermissions="true" >
+96-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-47
+97            <meta-data
+97-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-25:70
+98                android:name="android.support.FILE_PROVIDER_PATHS"
+98-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:17-67
+99                android:resource="@xml/file_system_provider_paths" />
+99-->[:expo-file-system] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:17-67
+100        </provider>
+101
+102        <service
+102-->[:expo-location] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-19:40
+103            android:name="expo.modules.location.services.LocationTaskService"
+103-->[:expo-location] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-78
+104            android:exported="false" />
+104-->[:expo-location] G:\prateek projects codingweb\react projects\react-native\weatherman\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-37
+105
+106        <activity
+106-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\7620f4727ee927d4cd01cce590adbf5e\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+107-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\7620f4727ee927d4cd01cce590adbf5e\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+108            android:exported="false"
+108-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\7620f4727ee927d4cd01cce590adbf5e\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+109-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\7620f4727ee927d4cd01cce590adbf5e\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+110
+111        <meta-data
+111-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\6527e9bef23ae93cc5f199026e77ebf3\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+112            android:name="com.google.android.gms.version"
+112-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\6527e9bef23ae93cc5f199026e77ebf3\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+113            android:value="@integer/google_play_services_version" />
+113-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\6527e9bef23ae93cc5f199026e77ebf3\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+114
+115        <service
+115-->[androidx.room:room-runtime:2.1.0] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+116            android:name="androidx.room.MultiInstanceInvalidationService"
+116-->[androidx.room:room-runtime:2.1.0] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+117            android:exported="false" />
+117-->[androidx.room:room-runtime:2.1.0] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\5f7132f69994fe4e2c8f322e81b3f8c9\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+118        <service
+118-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+119            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+119-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+120            android:exported="false" />
+120-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+121        <service
+121-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+122            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+122-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+123            android:exported="false" />
+123-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+124        <service
+124-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+125            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+125-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+126            android:exported="false" />
+126-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\Hp\.gradle\caches\transforms-2\files-2.1\b3b7ff26ce5b53ce6412be4ef52f7af6\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+127    </application>
+128
+129</manifest>
