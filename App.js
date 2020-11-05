@@ -1,6 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import { Button, SafeAreaView, StyleSheet, TextInput, View, Text, TouchableHighlight} from 'react-native';
+import React, { useCallback, useEffect, useState } from 'react';
+import { Button, SafeAreaView, StyleSheet, TextInput, View, Text, TouchableHighlight, Dimensions, RefreshControl} from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import Weather from './components/Weather'
+
+//const screenHeight=(Dimensions.get('window').height)
+const screenWidth=(Dimensions.get('window').width)
+const wait = (timeout) => {
+  return new Promise(resolve => {
+    setTimeout(resolve, timeout);
+  });
+}
 
 export default function App() {
     const mapAPIkey='your_mapbox_api_key'
@@ -8,6 +17,7 @@ export default function App() {
     const [searchText,setSearchText]=useState('')
     const [mapData,setMapData]=useState([])
     const [ticker,setTicker]=useState(false)
+    const [refreshing,setRefreshing]=useState(false)
 
     useEffect(()=>{
         if(ticker){
@@ -16,6 +26,12 @@ export default function App() {
         }
         setTicker(false)
     },[ticker])
+    
+    const onRefresh = useCallback(() => {
+        setRefreshing(true);
+
+        wait(2000).then(() => setRefreshing(false));
+    }, []);
 
     const callMapApi=async()=>{
         const query=searchText
@@ -39,33 +55,38 @@ export default function App() {
             <View style={styles.app__header}>
                 <Text style={styles.app__headerText}>Weatherman</Text>
             </View>
-            <TextInput
-                onChangeText={(text)=>setSearchText(text)}
-                value={searchText}
-                placeholder='Search a place...'
-                style={styles.app__textInput}
-            />
-            <View style={styles.app__inputBtn}>
-                <TouchableHighlight
-                    activeOpacity={0.5}
-                    underlayColor='#ff66a3'
-                >
-                    <Button 
-                        disabled={!searchText} 
-                        title='Search' 
-                        onPress={tickerUpd}
-                        color='#ff0066'
-                    />
-                </TouchableHighlight>
-            </View>
-            {
-                features &&
-                <Weather
-                    fullName={features[0].place_name}
-                    longitude={features[0].center[0]}
-                    latitude={features[0].center[1]}
+            <ScrollView
+                refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh}/>}
+            >
+                <TextInput
+                    onChangeText={(text)=>setSearchText(text)}
+                    value={searchText}
+                    placeholder='Search a place...'
+                    placeholderTextColor='#f2f2f2'
+                    style={styles.app__textInput}
                 />
-            }
+                <View style={styles.app__inputBtn}>
+                    <TouchableHighlight
+                        activeOpacity={0.5}
+                        underlayColor='#ff66a3'
+                    >
+                        <Button 
+                            disabled={!searchText} 
+                            title='Search' 
+                            onPress={tickerUpd}
+                            color='#ff0066'
+                        />
+                    </TouchableHighlight>
+                </View>
+                {
+                    features &&
+                    <Weather
+                        fullName={features[0].place_name}
+                        longitude={features[0].center[0]}
+                        latitude={features[0].center[1]}
+                    />
+                }
+            </ScrollView>
         </View>
     </SafeAreaView>
   );
@@ -77,7 +98,7 @@ const styles = StyleSheet.create({
       paddingTop:20
   },
   app__mainView:{
-      minHeight:'100vh',
+      //minHeight:(screenHeight),
       height:'100%',
       backgroundColor:'#333333',
   },
@@ -99,6 +120,6 @@ const styles = StyleSheet.create({
   app__inputBtn:{
       borderRadius:5,
       margin:10,
-      width:'50vw',
-  }
+      width:(screenWidth/2),
+  },
 });

@@ -9,8 +9,14 @@ const TemperatureCard = ({temp,feelsLike}) => {
         <View style={styles.tempCard}>
             <Avatar image={tempIcon} style={styles.tempCard__avatar}/>
             <View style={styles.tempCard__view}>
-                <Text style={{color:'#333333'}}><strong>Current:</strong> {temp} °C</Text>
-                <Text style={{color:'#333333'}}><strong>Feels Like:</strong> {feelsLike} °C</Text>
+                <View style={styles.tempCard__textLine}>
+                    <Text style={{color:'#333333',fontWeight:'bold'}}>Current: </Text>
+                    <Text>{temp} °C</Text>
+                </View>
+                <View style={styles.tempCard__textLine}>
+                    <Text style={{color:'#333333',fontWeight:'bold'}}>Feels Like: </Text>
+                    <Text>{feelsLike} °C</Text>
+                </View>
             </View>
         </View>
     )
@@ -35,5 +41,9 @@ const styles = StyleSheet.create({
     tempCard__view:{
         position:'absolute',
         left:'50%',
+    },
+    tempCard__textLine:{
+        display:'flex',
+        flexDirection:'row'
     }
 })

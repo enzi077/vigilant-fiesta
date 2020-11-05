@@ -9,7 +9,8 @@ const HumidityCard = ({humidity}) => {
         <View style={styles.humidityCard}>
             <Avatar image={humidityIcon} style={styles.humidityCard__avatar}/>
             <View style={styles.humidityCard__view}>
-                <Text style={{color:'#333333'}}><strong>Humidity:</strong> {humidity} %</Text>
+                <Text style={{color:'#333333',fontWeight:'bold'}}>Humidity: </Text>
+                <Text>{humidity} %</Text>
             </View>
         </View>
     )
@@ -34,5 +35,7 @@ const styles = StyleSheet.create({
     humidityCard__view:{
         position:'absolute',
         left:'50%',
+        display:'flex',
+        flexDirection:'row'
     }
 })
